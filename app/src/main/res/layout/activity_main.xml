@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:layout_marginVertical="45dp"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/imImagen"
+        android:src="@drawable/imagen_login"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="128dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurante_ripa"
+        app:layout_constraintTop_toBottomOf="@+id/imImagen"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/titles"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter_variable_fonts_lnt_wght"/>
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="13.5dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toTopOf="@+id/btSignUp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/button"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="43dp"/>
+
+    <Button
+        android:id="@+id/btSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="13.5dp"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="43dp"
+        android:layout_marginBottom="30dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Items dimensions -->
+    <dimen name="ml_text_item">14dp</dimen>
+    <dimen name="mv_item">8dp</dimen>
+    <dimen name="mt_text_item">4dp</dimen>
+    <dimen name="ml_xx">10dp</dimen>
+</resources>

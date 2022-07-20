@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgComida"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/imagen_comida_1"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/ivFavoritos"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/completeroundstyle"
+            android:padding="8dp"
+            android:src="@drawable/fav"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/favoritos"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contenedor"
+            android:layout_width="268dp"
+            android:layout_height="108dp"
+            android:background="@drawable/roundstyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvNombreComida"
+            android:layout_width="240dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/ml_text_item"
+            android:layout_marginTop="@dimen/mv_item"
+            android:text="@string/nombre_comida"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/titles"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/contenedor"
+            app:layout_constraintTop_toTopOf="@id/contenedor" />
+
+        <TextView
+            android:id="@+id/tvDescripcionComida"
+            android:layout_width="240dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="@dimen/ml_text_item"
+            android:layout_marginTop="@dimen/mt_text_item"
+            android:text="@string/descripcion_comida"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/texts"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/contenedor"
+            app:layout_constraintTop_toBottomOf="@id/tvNombreComida" />
+
+        <TextView
+            android:id="@+id/tvPrecioComida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valor_comida"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="@dimen/ml_text_item"
+            android:textColor="@color/titles"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/contenedor"
+            app:layout_constraintTop_toBottomOf="@id/tvDescripcionComida" />
+
+        <TextView
+            android:id="@+id/tvApto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apto_celiaco"
+            android:textColor="@color/button"
+            android:layout_marginTop="@dimen/mt_text_item"
+            android:layout_marginBottom="@dimen/mv_item"
+            android:layout_marginStart="@dimen/ml_xx"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/contenedor"
+            app:layout_constraintLeft_toLeftOf="@id/contenedor" />
+
+        <Button
+            android:id="@+id/btVerDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:backgroundTint="@color/button"
+            android:text="@string/ver_detalle"
+            android:textAllCaps="false"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:minHeight="0dp"
+            android:textSize="12sp"
+            android:layout_marginEnd="7dp"
+            app:layout_constraintBottom_toBottomOf="@id/contenedor"
+            app:layout_constraintRight_toRightOf="@id/contenedor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
