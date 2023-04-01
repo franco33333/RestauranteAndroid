@@ -1,4 +1,4 @@
-# RestauranteAndroid
+# RestauranteAndroid (20/07/2022)
 
 Proyecto desarrollado en Kotlin con Android Studio para el ingreso a Infinixsoft.
 
