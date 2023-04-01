@@ -1,6 +1,6 @@
 # RestauranteAndroid
 
-Proyecto desarrollado en Kotlin con Android Studio.
+Proyecto desarrollado en Kotlin con Android Studio para el ingreso a Infinixsoft.
 
 Pantallas de Login, Sign Up, Home, Listado de comidas obtenidas por API y detalles de las mismas.
 El usuario que se crea se almacena en Shared Preferences. Las comidas son obtenidas desde la API de https://spoonacular.com/food-api
